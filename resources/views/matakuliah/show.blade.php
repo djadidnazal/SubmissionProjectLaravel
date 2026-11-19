@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detail Mata Kuliah</h1>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Kode Mata Kuliah</th>
+            <td>{{ $matakuliah->kode_matakuliah }}</td>
+        </tr>
+
+        <tr>
+            <th>Nama Mata Kuliah</th>
+            <td>{{ $matakuliah->nama_matakuliah }}</td>
+        </tr>
+
+        <tr>
+            <th>Jumlah SKS</th>
+            <td>{{ $matakuliah->sks }}</td>
+        </tr>
+
+        <tr>
+            <th>Tanggal Dibuat</th>
+            <td>{{ $matakuliah->created_at }}</td>
+        </tr>
+
+        <tr>
+            <th>Tanggal Diperbarui</th>
+            <td>{{ $matakuliah->updated_at }}</td>
+        </tr>
+    </table>
+</body>
+</html>
